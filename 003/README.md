@@ -1,4 +1,4 @@
-# Problem 2 - Even Fibonacci numbers
+# Problem 3 - Largest prime factor
 
 The prime factors of 13195 are 5, 7, 13 and 29.
 
