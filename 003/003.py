@@ -31,11 +31,10 @@ def main():
     if is_even(number): largest_prime_factor = 2
 
     candidate_factor = 3
-    ceiling = number
-    while (pow(candidate_factor, 2) <= number):
-        if is_factor(candidate_factor, ceiling) and is_prime(candidate_factor):
+    while (candidate_factor <= number):
+        if is_factor(candidate_factor, number) and is_prime(candidate_factor):
             largest_prime_factor = candidate_factor
-            ceiling = (ceiling // candidate_factor)
+            number = (number // candidate_factor)
 
         candidate_factor += 2
 
